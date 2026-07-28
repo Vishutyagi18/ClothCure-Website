@@ -544,6 +544,9 @@ body {
   font-weight: 800;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
 }
+.showcase-card--featured .showcase-card__price span {
+  color: rgba(255, 255, 255, 0.9);
+}
 
 .showcase-card--featured .showcase-card__link {
   color: #7ee8d8;
