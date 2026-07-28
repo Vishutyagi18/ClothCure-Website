@@ -526,6 +526,10 @@ body {
   border-color: transparent;
   color: #fff;
 }
+.showcase-card--featured > p:not(.showcase-card__price) {
+  color: #ffffff !important;
+  opacity: 1;
+}
 
 .showcase-card--featured .showcase-card__label {
   background: rgba(255, 255, 255, 0.2);
