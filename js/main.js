@@ -118,6 +118,12 @@
       autoplay = setInterval(() => goTo(current + 1), 6000);
     });
   }
+  // Google Ads Conversion - Website Lead
+if (typeof gtag === "function") {
+  gtag("event", "conversion", {
+    send_to: "AW-18301192182/Tw9kCLviqtocEPaP2JZE"
+  });
+}
 
   // Pickup form validation & submit
   if (pickupForm) {
@@ -177,4 +183,34 @@
       }, 500);
     });
   }
+  // Google Ads Conversion Tracking
+document.querySelectorAll('a[href^="https://wa.me"]').forEach((btn) => {
+  btn.addEventListener("click", function () {
+    if (typeof gtag === "function") {
+      gtag("event", "conversion", {
+        send_to: "AW-18301192182/Tw9kCLviqtocEPaP2JZE"
+      });
+    }
+  });
+});
+
+document.querySelectorAll('a[href^="tel:"]').forEach((btn) => {
+  btn.addEventListener("click", function () {
+    if (typeof gtag === "function") {
+      gtag("event", "conversion", {
+        send_to: "AW-18301192182/Tw9kCLviqtocEPaP2JZE"
+      });
+    }
+  });
+});
+
+document.querySelectorAll('a[href^="mailto:"]').forEach((btn) => {
+  btn.addEventListener("click", function () {
+    if (typeof gtag === "function") {
+      gtag("event", "conversion", {
+        send_to: "AW-18301192182/Tw9kCLviqtocEPaP2JZE"
+      });
+    }
+  });
+});
 })();
